@@ -60,6 +60,10 @@ li {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   align-items: center;
+ cursor: grab;
+}
+li:active {
+  cursor: grabbing;
 }
 
 li.completed {
