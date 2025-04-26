@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>আমার টু-ডু লিস্ট</h1>
+    
+    <div class="controls">
+      <input type="text" id="task-input" placeholder="নতুন টাস্ক যোগ করুন...">
+      <button id="add-task">যোগ করুন</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <div class="completed-tasks-section" style="display: none;">
+      <h2>সম্পন্ন টাস্কসমূহ</h2>
+      <ul id="completed-task-list"></ul>
+    </div>
+
+    <div class="summary">
+      <span>Total: <span id="total">0</span></span> |
+      <span>Completed: <span id="completed">0</span></span> |
+      <span>Remaining: <span id="remaining">0</span></span>
+    </div>
+
+    <div class="footer-buttons">
+      <button id="toggle-completed">Show Completed</button>
+      <button id="clear-all">Clear All</button>
+      <button id="toggle-theme">Dark Mode</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
